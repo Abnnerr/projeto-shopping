@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fashion</title>
+    <link rel="shortcut icon" href="imgs/Vector (2).png" type="image/x-icon">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,12 +15,22 @@
                     colors: {
                         amarelo: '#E6C744',
                         cinza: '#C2C8DA',
+                    },
+                    font_family: {
+                        font1: 'balsa',
                     }
                 }
             }
         }
     </script>
     <style>
+        @font-face {
+            font-family: balsa;
+            src: url(fonts/BalsamiqSans-Regular.ttf);
+        }
+        body {
+            font-family: balsa;
+        }
         html::-webkit-scrollbar {
             width: 8px;
 
