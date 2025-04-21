@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth scr">
 
 <head>
     <meta charset="UTF-8">
@@ -19,30 +19,44 @@
             }
         }
     </script>
-</head>
+    <style>
+        html::-webkit-scrollbar {
+            width: 8px;
 
+        }
+        html::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px  #e6c744;
+        }
+        html::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: #e6c744;
+        }
+    </style>
+</head>
 <body>
-    <header class="flex justify-between items-center px-[40px] py-[25px]">
-        <div>
+    <header class="flex justify-center  lg:flex lg:items-center lg:justify-between lg:px-[40px] lg:py-[40px]      xl:flex xl:items-center xl:justify-between xl:px-[60px] xl:py-[40px] ">
+        <div class="">
             <a href=""><img src="/imgs/Frame 57.png" alt=""></a>
         </div>
-        <div class="flex gap-[50px] items-center">
+        <div class="  hidden     lg:flex lg:gap-[50px] lg:items-center      xl:flex xl:gap-[50px] xl:items-center ">
             <nav class="flex gap-[60px]">
                 <a href="" class="hover:text-amarelo duration-[600ms]">Catalogue</a>
                 <a href="" class="hover:text-amarelo duration-[600ms]">Fashion</a>
                 <a href="" class="hover:text-amarelo duration-[600ms]">Favourite</a>
                 <a href="" class="hover:text-amarelo duration-[600ms]">Lifestyle</a>
             </nav>
-            <a href="" class="bg-black text-white px-[5px] py-[5px] rounded-[8px] ">Sign UP</a>
+            <a href="" class="hidden    lg:block lg:bg-black lg:text-white lg:px-[5px] lg:py-[5px] lg:rounded-[8px]        xl:block xl:bg-black xl:text-white xl:px-[5px] xl:py-[5px] xl:rounded-[8px] ">Sign UP</a>
+            
         </div>
+        <box-icon name='menu-alt-right' class="fixed  w-[50px] h-[50px] right-[0px] bottom-[0px] lg:hidden xl:hidden "></box-icon>
     </header>
     <main>
-        <section class="px-[40px] pb-[70px]">
-            <div class="flex justify-between bg-[#F4F6F5] h-[600px] px-[20px] rounded-[60px] relative">
-                <img src="imgs/Rectangle 3.png" alt="" class="absolute left-[95px] top-[55px] w-[300px]">
-                <img src="imgs/Rectangle 6.png" alt="" class="absolute left-[100px] top-[230px] w-[350px]">
-                <div class=" ml-[100px] mt-[50px]">
-                    <h1 class="text-[70px] w-[200px] font-[900]  leading-[90px] z-[1px] relative">
+        <section class="   px-[20px] py-[20px]        md:px-[20px] md:py-[20px]      lg:px-[40px] lg:pb-[70px]   xl:px-[60px] xl:pb-[70px]">
+            <div class="  bg-[#F4F6F5]     flex justify-between  px-[20px] rounded-[60px] relative    md:flex md:justify-between md:h-[400px] md:px-[20px] md:rounded-[60px] md:relative    lg:flex lg:justify-between lg:h-[600px] lg:px-[20px] lg:rounded-[60px] lg:relative     xl:flex xl:justify-between  xl:h-[600px] xl:px-[20px] xl:rounded-[60px] xl:relative">
+                <img src="imgs/Rectangle 3.png" alt="" class="absolute  left-[20px] top-[60px] w-[100px]    md:left-[50px] md:top-[60px] md:w-[200px]      lg:left-[95px] lg:top-[140px] lg:w-[200px]    xl:left-[100px] xl:top-[55px] xl:w-[300px]">
+                <img src="imgs/Rectangle 6.png" alt="" class="absolute  left-[30px] top-[105px] w-[120px]   md:left-[60px] md:top-[155px] md:w-[240px]    lg:left-[100px] lg:top-[230px] lg:w-[250px]  xl:left-[100px] xl:top-[230px] xl:w-[350px]">
+                <div class="    ml-[10px] mt-[60px]     md:ml-[60px] md:mt-[60px]       lg:ml-[100px] lg:mt-[140px]   xl:ml-[100px] xl:mt-[50px]">
+                    <h1 class="      relative text-[30px] w-[100px] font-[900] leading-[25px] z-[1px]   md:relative md:text-[50px] md:w-[200px] md:font-[900] md:leading-[50px] md:z-[1px]    lg:relative lg:text-[50px] lg:w-[200px] lg:font-[900] lg:leading-[50px] lg:z-[1px]      xl:relative xl:text-[70px] xl:w-[200px] xl:font-[900]  xl:leading-[90px] xl:z-[1px]">
                         LET'S
                         EXPLORE
                         UNIQUE
@@ -50,18 +64,18 @@
                     </h1>
 
 
-                    <p class="text-[25px] my-[20px] mb-[20px]">Live for Influential and Innovative fashion!</p>
-                    <div class="flex  items-center gap-[60px] mt-[20px]">
-                        <img src="imgs/Vector 9.svg" alt="">
-                        <a href="" class="bg-black text-white px-[30px] py-[15px] rounded-[8px]">Shop now</a>
+                    <p class="text-[10px] my-[20px] mb-[20px]     lg:text-[25px] lg:my-[20px] lg:mb-[20px]      xl:text-[25px] xl:my-[20px] xl:mb-[20px]">Live for Influential and Innovative fashion!</p>
+                    <div class="flex items-center  md:gap-[10px]   lg:gap-[10px]     xl:gap-[60px] mt-[20px]">
+                        <img src="imgs/Vector 9.svg" alt="" class=" hidden  lg:block lg:w-[150px]   xl:block xl:w-[200px]">
+                        <a href="" class="bg-black text-white     px-[10px] py-[10px] rounded-[8px]   md:px-[10px] md:py-[10px] md:rounded-[8px]   lg:px-[30px] lg:py-[15px] lg:rounded-[8px]    xl:px-[40px] xl:py-[15px] xl:rounded-[8px]">Shop now</a>
                     </div>
                 </div>
                 <img src="/imgs/incendiary-fantastically-beautiful-girl-coat-eco-fur-moves-fun-picture-lovely-lady-pink-clothes-removebg-preview 1.png"
-                    alt="" class="w-[600px] h-[600px]">
+                    alt="" class="    w-[160px] h-[300px]         md:w-[400px] md:h-[100%]      lg:w-[500px] lg:h-[600px]    xl:w-[600px] xl:h-[600px]">
             </div>
         </section>
-        <section class="bg-amarelo py-[45px] px-[100px]">
-            <div class="flex justify-between mix-blend-multiply">
+        <section class="bg-amarelo py-[45px] px-[10px]">
+            <div class="  justify-between mix-blend-multiply flex overflow-auto   md:flex md:overflow-auto    lg:flex lg:overflow-auto   xl:overflow-hidden xl:flex">
                 <img src="imgs/Rectangle 36.svg" alt="">
                 <img src="imgs/Rectangle 44.svg" alt="">
                 <img src="imgs/Rectangle 38.svg" alt="">
@@ -70,10 +84,10 @@
                 <img src="imgs/Rectangle 41.svg" alt="">
             </div>
         </section>
-        <section class="px-[100px] pt-[150px] relative">
-            <img src="imgs/Vector 8.svg" alt="" class="absolute top-[80px]  left-[245px] z-0 w-[125px]">
+        <section class="px-[100px] pt-[150px] relative flex justify-center md:flex md:justify-center   lg:block xl:block">
+            <img src="imgs/Vector 8.svg" alt="" class="absolute  top-[80px]  left-[255px] z-0 w-[125px]   md:top-[80px]  md:left-[400px] md:z-0 md:w-[125px]      lg:top-[80px] lg:left-[245px] lg:z-0 lg:w-[125px]    xl:top-[80px] xl:left-[245px] xl:z-0 xl:w-[125px]">
             <h1 class="text-[40px] font-[900] mt-[45px] absolute top-[0px]">New Arrivals</h1>
-            <div class="flex justify-between pb-[100px]">
+            <div class=" justify-between pb-[100px] sm:flex-col md:flex lg:flex-row xl:flex-row">
                 <div class="w-[300px]">
                     <img src="imgs/Rectangle 20.svg" alt="">
                     <div class=" mt-[25px]">
@@ -112,27 +126,27 @@
                 </div>
             </div>
         </section>
-        <section class="h-[660px] bg-amarelo flex items-center gap-[70px] relative">
-            <img src="imgs/image 12.png" alt="" class="w-[650px] h-[660px]">
-            <img src="imgs/Rectangle 3.png" alt="" class="absolute left-[750px] top-[155px] w-[350px]">
-            <div class="absolute right-[30px] top-[150px]">
-                <h1 class="font-[900] text-[70px]  w-[450px]">PAYDAY
+        <section class="relative  bg-amarelo  flex  justify-center      h-[400px]        md:h-[300px]    lg:flex lg:justify-between lg:h-[660px]        xl:flex xl:justify-between xl:h-[660px]    ">
+            <img src="imgs/image 12.png" alt="" class="  hidden    lg:block   lg:w-[480px] lg:h-[660px]    xl:w-[650px] xl:h-[660px]">
+            <img src="imgs/Rectangle 3.png" alt="" class=" hidden absolute  left-[750px] top-[155px] w-[350px]">
+            <div class="   text-center     md:text-center     lg:absolute lg:right-[30px] lg:top-[150px]    xl:absolute xl:right-[30px] xl:top-[150px]">
+                <h1 class="    font-[900] text-[70px]     md:font-[900] md:text-[70px]     lg:font-[900] lg:text-[70px]  lg:w-[450px]     xl:font-[900] xl:text-[70px]  xl:w-[450px]">PAYDAY
                     SALE NOW</h1>
-                <h4 class="w-[350px] mb-[30px]">Spend minimal $100 get 30% off
+                <h4 class="    md:mb-[5px]     lg:w-[350px] lg:mb-[30px]    xl:w-[350px] xl:mb-[30px]">Spend minimal $100 get 30% off
                     voucher code for your next purchase</h4>
                 <h5 class="font-[800]">1 June - 10 June 2021</h5>
-                <h5 class="mb-[40px]">*Terms & Conditions apply</h5>
+                <h5 class="  mb-[30px] md:mb-[30px]   lg:mb-[40px] xl:mb-[40px]">*Terms & Conditions apply</h5>
                 <a href="" class="p-[20px] bg-black text-white rounded-[8px] font-[700]">Shop Now</a>
             </div>
         </section>
-        <section class="px-[100px] pt-[70px]">
+        <section class="px-[100px] pt-[70px] ">
             <div class="relative bg-amarelo mb-[100px]">
-                <img src="imgs/Vector 8.svg" alt="" class="absolute left-[220px] top-[25px] w-[150px]">
-                <h1 class="font-[800] text-[38px] absolute">Young's Favourite</h1>
+                <img src="imgs/Vector 8.svg" alt="" class="   hidden   lg:block lg:absolute lg:left-[220px] lg:top-[25px] lg:w-[150px] xl:block xl:absolute xl:left-[220px] xl:top-[25px] xl:w-[150px]">
+                <h1 class="  mb-[50px] md:mb-[60px] font-[800]   text-[25px] md:text-[38px] lg:text-[38px] xl:text-[38px] absolute">Young's Favourite</h1>
             </div>
-            <div class="flex justify-between">
-                <div class="w-[500px]">
-                    <img src="imgs/Rectangle 50.png" alt="" class="w-[575px] h">
+            <div class="  lg:flex lg:justify-between  xl:flex xl:justify-between">
+                <div class=" mb-[30px] xd:w-[500px]  lg:w-[500px] xl:w-[500px]">
+                    <img src="imgs/Rectangle 50.png" alt="" class="w-[575px] ">
                     <a href="" class="flex justify-between mt-[20px]">
                         <div>
                             <h4 class="font-[800]">Trending on instagram</h4>
@@ -141,8 +155,8 @@
                         <box-icon name='right-arrow-alt'></box-icon>
                     </a>
                 </div>
-                <div class="w-[500px]">
-                    <img src="imgs/Rectangle 49.png" alt="" class="w-[575px] h">
+                <div class="   xd:w-[500px]  lg:w-[500px] xl:w-[500px]">
+                    <img src="imgs/Rectangle 49.png" alt="" class="w-[575px] ">
                     <a href="" class="flex justify-between mt-[20px]">
                         <div>
                             <h4 class="font-[800]">Trending on instagram</h4>
@@ -153,37 +167,79 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <div>
-                    <h1>DOWNLOAD APP &
+        <section class=" hidden         md:block md:px-[100px] md:pt-[50px]      lg:block   lg:px-[100px] lg:pt-[50px]    xl:block  xl:px-[100px] xl:pt-[50px]">
+            <div class="        lg:flex lg:justify-between lg:items-center     xl:flex xl:justify-between xl:items-center">
+                <div class="">
+                    <h1 class="  flex justify-center  text-[20px] font-[900] w-[350px]           md:text-[35px] md:font-[900] md:w-[350px]     lg:text-[35px] lg:font-[900] lg:w-[350px]   xl:text-[35px] xl:font-[900] xl:w-[350px]">DOWNLOAD APP &
                         GET THE VOUCHER!</h1>
-                    <h4>Get 30% off for first transaction using
+                    <h4 class=" flex  justify-center   w-[300px] my-[50px] text-[18px]  md:w-[300px] md:my-[50px] md:text-[18px]    lg:w-[300px] lg:my-[50px] lg:text-[18px]     xl:w-[300px] xl:my-[50px] xl:text-[18px]">Get 30% off for first transaction using
                         Rondovision mobile app for now.</h4>
-                    <div class="flex gap-[50px]">
-                        <a href="" class="flex p-[5px] bg-black rounded-[8px]">
+                    <div class=" flex-col items-center   md:flex md:gap-[40px]   lg:flex lg:gap-[40px]   xl:flex  xl:gap-[40px]">
+                        <a href="" class=" mb-[30px]  flex  items-center p-[5px] bg-black rounded-[8px]">
                             <box-icon type='logo' name='apple' class="h-[50px] w-[50px]" color="#fff"></box-icon>
                             <div class="flex-col text-white">
                                 <h5">Download on the</h5>
-                                <h4 >App Store</h4>
+                                    <h4>App Store</h4>
                             </div>
                         </a>
-                        <a href="" class="flex bg-black rounded-[8px] p-[5px]">
+                        <a href="" class="flex items-center bg-black rounded-[8px] p-[5px] gap-[5px]">
                             <box-icon type='logo' name='play-store' class="h-[50px] w-[50px]" color="#fff"></box-icon>
-                            <div class="flex-col text-white w-[120px]">
+                            <div class="flex-col items-center text-white w-[120px]">
                                 <h5>get in</h5>
-                                <h4>google</h4>
+                                <h4 class="text-[25px]">google</h4>
                             </div>
-
                         </a>
                     </div>
                 </div>
-                <img src="" alt="">
+                <img src="imgs/Group 84.png" alt="" class=" md:w-[500px] lg:w-[500px] xl:w-[500px]">
+            </div>
+        </section>
+        <section class="flex justify-center bg-amarelo py-[50px]">
+            <div class="text-center">
+                <h1 class="   md:text-[30px] md:font-[900] md:w-[650px]    lg:text-[30px] lg:font-[900] lg:w-[650px]   xl:text-[30px] xl:font-[900] xl:w-[650px]">JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO</h1>
+                <h4 class="  md:text-[20px] md:font-[800] md:my-[30px]     lg:text-[20px] lg:font-[800] lg:my-[30px]    xl:text-[20px] xl:font-[800] xl:my-[30px]">Type your email down below and be young wild generation</h4>
+                <form action="" class="relative">
+                    <input type="text" class="w-[300px] h-[60px] pl-[25px] rounded-[8px] text-[20px]"
+                        placeholder="Add your email here">
+                    <button
+                        class="absolute bg-black text-white        bottom-[8px] right-[60px] py-[10px] px-[10px] rounded-[8px] font-[800]      md:bottom-[8px] md:right-[190px] md:py-[10px] md:px-[10px] md:rounded-[8px] md:font-[800]         lg:bottom-[8px] lg:right-[190px] lg:py-[10px] lg:px-[10px] lg:rounded-[8px] lg:font-[800]       xl:bottom-[8px] xl:right-[190px] xl:py-[10px] xl:px-[10px] xl:rounded-[8px] xl:font-[800]">SEND</button>
+                </form>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class=" bg-black  px-[0px] md:px-[100px] lg:px-[100px] xl:px-[100px] py-[50px] flex justify-between">
+        <div class="text-white">
+            <h1 class="  hidden  md:block lg:block  xl:block    text-[30px] font-[900]">Fashion</h1>
+            <h3 class="   hidden   md:block lg:block xl:block  w-[300px] my-[30px] text-[20px]">Complete your style with awesome clothes from us.</h3>
+            <div class="fill-white flex    gap-[5px] md:gap-[20px] lg:gap-[20px] xl:gap-[20px]">
+                <a href=""><box-icon type='logo' name='instagram-alt' class="w-[20px] h-[20px] md:w-[40px] md:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[40px] xl:h-[40px]"></box-icon><a>
+                <a href=""><box-icon name='facebook-circle' type='logo' class="w-[20px] h-[20px] md:w-[40px] md:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[40px] xl:h-[40px]"></box-icon><a>
+                <a href=""><box-icon type='logo' name='twitter' class="w-[20px] h-[20px] md:w-[40px] md:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[40px] xl:h-[40px]"></box-icon><a>
+                <a href=""><box-icon type='logo' name='linkedin-square' class="w-[20px] h-[20px] md:w-[40px] md:h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[40px] xl:h-[40px]"></box-icon><a>
+            </div>
+        </div>
+        <div class="flex justify-between text-white gap-[10px] md:gap-[10px] lg:gap-[150px] xl:gap-[150px]">
+            <div class="flex-col">
+                <h1 class="font-[900]  mb-[10px]">company</h1>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">About</a>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">Contact us</a>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">Support</a>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">Careers</a>
 
+            </div>
+            <div>
+                <h1 class="font-[900]  mb-[10px]">Quick Link</h1>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">About</a>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">Contact us</a>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">Support</a>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">Careers</a>
+            </div>
+            <div>
+                <h1 class="font-[900] mb-[10px]">Legal</h1>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration--[600ms]">About</a>
+                <a href="" class="block  mb-[10px] font-[600] hover:text-amarelo hover:ml-[10px] duration-[600ms]">Contact us</a>
+            </div>
+        </div>
     </footer>
 </body>
 
